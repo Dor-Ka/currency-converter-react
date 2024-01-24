@@ -1,11 +1,14 @@
 import Container from "./Container"
+import Form from "./Form";
+import Result from "./Result";
 
 function App() {
 
   return (
-   <Container>
-     
-   </Container>
+    <Container>
+      <Form />
+      <Result />
+    </Container>
 
   );
 };

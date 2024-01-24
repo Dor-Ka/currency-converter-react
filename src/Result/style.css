@@ -1,0 +1,21 @@
+.text--normal {
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    color: hsl(0, 0%, 6%);
+    font-style: italic;
+}
+
+.text__result {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: hsl(0, 3%, 12%);
+    font-style: italic;
+}
