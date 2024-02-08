@@ -1,4 +1,4 @@
-.text--normal {
+.text {
     margin: 0 auto;
     padding: 5px;
     width: 100%;
@@ -8,7 +8,7 @@
     font-style: italic;
 }
 
-.text__result {
+.text--result {
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 10px;

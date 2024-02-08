@@ -9,7 +9,6 @@ function App() {
       <Form />
       <Result />
     </Container>
-
   );
 };
 
