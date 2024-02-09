@@ -1,18 +1,18 @@
-const currencies = [
+export const currencies = [
     {
-;       name: "USD",
-        rate: 4,0096,
+        name: "USD",
+        rate: 4.0096,
     },
     {
         name: "EUR",
-        rate: 4,3167,
+        rate: 4.3167,
     },
     {
         name: "CHF",
-        rate: 4,5779,
+        rate: 4.5779,
     },
     {
         name: "GBP",
-        rate: 5,0559,
+        rate: 5.0559,
     },
 ];
