@@ -9,8 +9,11 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
   background-image: url("../public/background.png");
+  background-position: center;
+  background-size: cover;
 }
