@@ -11,9 +11,10 @@ html {
 body {
   display: flex;
   justify-content: center;
+  max-height: 600px;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
-  background-image: url("../public/background.png");
+  background-image: url("../public/backgrounds.png");
   background-position: center;
   background-size: cover;
 }
