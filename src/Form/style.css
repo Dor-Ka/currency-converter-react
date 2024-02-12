@@ -42,6 +42,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+    min-height: 25px;
     border: none;
     background-color: #ccc;
     border-radius: 10px;

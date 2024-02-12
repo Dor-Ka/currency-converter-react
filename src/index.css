@@ -10,6 +10,7 @@ html {
 
 body {
   display: flex;
+  align-items: center;
   justify-content: center;
   max-height: 600px;
   font-family: 'Roboto Condensed', sans-serif;

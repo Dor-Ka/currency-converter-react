@@ -1,11 +1,16 @@
 import "./style.css";
 
-const Result = () => (
-    <>
-        <p className="text">Otrzymasz:</p>
-        <p className="text text--result"> <strong> </strong> PLN</p>
-        <p className="text">(na dzień: 2024-02-09)</p>
-    </>
-)
+const Result = ({ result }) => (
+    <p className="text text--result">
+        {result !== undefined && (
+            <>
+                {result.sourceAmount.toFixed(2)}&nbsp;{result.currency}&nbsp; = &nbsp;
+                <stong>
+                    {result.targetAmount.toFixed(2)}&nbsp;PLN
+                </stong>
+            </>
+        )}
+    </p>
+);
 
 export default Result;
