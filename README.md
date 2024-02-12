@@ -1,3 +1,23 @@
+# currency-converter
+[link to the page](https://dorotakar.github.io/currency-converter/)
+
+![demo1](images/readme-react1.png)
+![demo2](images/readme-react2.gif)
+
+
+
+
+
+
+
+## General info:
+This project is a simple currency converter created for practising basic skills.
+## Technologies used:
+- HTML
+- CSS
+- JavaScript ES6+ features
+- BEM
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
