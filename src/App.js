@@ -23,7 +23,6 @@ function App() {
     <Container>
       <Form
         title="Przelicz walutę na PLN:"
-        result={result}
         calculateResult={calculateResult}
       />
       <p className="text">Po wymianie:</p>
