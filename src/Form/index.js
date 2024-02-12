@@ -1,6 +1,5 @@
 import { useState } from "react";
 import currencies from "../currencies";
-import Result from "../Result";
 import "./style.css";
 
 const Form = ({ calculateResult, result, title }) => {
@@ -61,10 +60,6 @@ const Form = ({ calculateResult, result, title }) => {
           <button className="form__button">Przelicz!</button>
         </p>
       </form>
-      <p className="text">Po wymianie:</p>
-      <Result result={result} />
-
-      <p className="text">(na dzień: 2024-02-09)</p>
     </>
   )
 }
