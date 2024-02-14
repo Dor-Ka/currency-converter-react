@@ -13,8 +13,8 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - react useEffect
 - clock: setInterval
 ## demo:
-![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react1.png)
-![demo2](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react2.gif)
+![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react1.png?)
+![demo2](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react2.gif?)
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
