@@ -9,6 +9,9 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - flex
 - immutability array in JavaScript
 - react
+- react useState
+- react useEffect
+- clock: setInterval
 ## demo:
 ![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react1.png)
 ![demo2](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react2.gif)
