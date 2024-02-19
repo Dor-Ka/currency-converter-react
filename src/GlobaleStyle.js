@@ -1,10 +1,12 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobaleStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
 }
 
 *,
-::after,
-::before {
+::after, ::before {
   box-sizing: inherit;
 }
 
@@ -19,3 +21,4 @@ body {
   background-position: center;
   background-size: cover;
 }
+`;
