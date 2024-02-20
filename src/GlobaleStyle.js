@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import backgrounds from "./backgrounds.png";
 
 export const GlobaleStyle = createGlobalStyle`
 html {
@@ -17,7 +18,7 @@ body {
   max-height: 600px;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
-  background-image: url("../public/backgrounds.png");
+  background-image: url("${backgrounds}");
   background-position: center;
   background-size: cover;
 }
