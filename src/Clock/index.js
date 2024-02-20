@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import { WrapedSection } from "./styled";
+import { useCurrentDate } from "./useCurrentDate";
 
 const formattedDate = (currentDate) => currentDate.toLocaleString(undefined, {
     weekday: "short",
@@ -16,17 +16,7 @@ const formattedTime = (currentDate) => currentDate.toLocaleString(undefined, {
 
 
 export const Clock = () => {
-    const [currentDate, setCurrentDate] = useState(new Date());
-
-    useEffect(() => {
-        const intervalClockId = setInterval(() => {
-            setCurrentDate(new Date());
-        }, 1000);
-        return () => {
-            clearInterval(intervalClockId);
-        };
-    }, []);
-
+    const currentDate = useCurrentDate();
     return (
         <WrapedSection>
             {formattedDate(currentDate)}
