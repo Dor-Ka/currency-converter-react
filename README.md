@@ -12,6 +12,7 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - react useState
 - react useEffect
 - clock: setInterval
+- styled-components
 ## demo:
 ![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react1.png?)
 ![demo2](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react2.gif?)
