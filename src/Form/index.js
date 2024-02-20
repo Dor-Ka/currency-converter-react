@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
-import { LabelText, Fieldset, FormButton, Legend, Input, Select, FormField } from "./styled";
+import { LabelText, Fieldset, FormButton, Legend, Input, FormField } from "./styled";
 
 export const Form = ({ calculateResult, title }) => {
   const [currency, setCurrency] = useState(currencies[1].name);
@@ -19,7 +19,8 @@ export const Form = ({ calculateResult, title }) => {
           <p>
             <LabelText>
               Waluta:
-              <Select
+              <Input 
+                as="select"
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
@@ -28,7 +29,7 @@ export const Form = ({ calculateResult, title }) => {
                     {currency.name}
                   </option>
                 ))}
-              </Select>
+              </Input>
             </LabelText>
           </p>
           <p>
