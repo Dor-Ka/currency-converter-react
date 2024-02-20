@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import { WrapedSection } from "./styled";
 
 const formattedDate = (currentDate) => currentDate.toLocaleString(undefined, {
     weekday: "short",
@@ -15,7 +15,7 @@ const formattedTime = (currentDate) => currentDate.toLocaleString(undefined, {
 });
 
 
-const Clock = () => {
+export const Clock = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
@@ -28,12 +28,10 @@ const Clock = () => {
     }, []);
 
     return (
-        <div className="clock">
+        <WrapedSection>
             {formattedDate(currentDate)}
             {", "}
             {formattedTime(currentDate)}
-        </div>
+        </WrapedSection>
     )
 }
-
-export default Clock;

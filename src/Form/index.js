@@ -1,67 +1,53 @@
 import { useState } from "react";
-import currencies from "../currencies";
-import "./style.css";
+import { currencies } from "../currencies";
+import { LabelText, Fieldset, FormButton, Legend, Input, Select, FormField } from "./styled";
 
-const Form = ({ calculateResult, result, title }) => {
+export const Form = ({ calculateResult, title }) => {
   const [currency, setCurrency] = useState(currencies[1].name);
   const [amount, setAmount] = useState("");
 
   const onFormSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
-  }
+  };
 
   return (
     <>
-      <form className="form" onSubmit={onFormSubmit}>
-        <fieldset className="form__fieldset margin">
-          <legend className="form__legent">
-            {title}
-          </legend>
+      <form onSubmit={onFormSubmit}>
+        <Fieldset>
+          <Legend>{title}</Legend>
           <p>
-            <label className="form__labellText">
+            <LabelText>
               Waluta:
-              <select
+              <Select
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
-                className="form__field  form__field--smaller"
               >
-                {currencies.map((currency => (
-                  <option
-                    key={currency.name}
-                    value={currency.name}
-                  >
+                {currencies.map((currency) => (
+                  <option key={currency.name} value={currency.name}>
                     {currency.name}
                   </option>
-                )))}
-              </select>
-            </label>
+                ))}
+              </Select>
+            </LabelText>
           </p>
           <p>
-            <label>
-              <span className="form__labellText">
-                *Kwota:
-                <input
-                  value={amount}
-                  onChange={({ target }) => setAmount(target.value)}
-                  className="form__field  form__field--smaller"
-                  type="number"
-                  step="0.01" min="0.01"
-                  required
-                />
-              </span>
-            </label>
+            <LabelText>
+              *Kwota:
+              <Input
+                value={amount}
+                onChange={({ target }) => setAmount(target.value)}
+                type="number"
+                step="0.01"
+                min="0.01"
+                required
+              />
+            </LabelText>{" "}
           </p>
-          <p className="form__field form__field--star">
-            * pole wymagane
-          </p>
-        </fieldset>
-        <p className="form__button">
-          <button className="form__button">Przelicz!</button>
-        </p>
+          <FormField>* pole wymagane</FormField>
+        </Fieldset>
+        <FormButton>Przelicz!</FormButton>
       </form>
     </>
-  )
-}
-
-export default Form;
+  );
+};

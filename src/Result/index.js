@@ -1,7 +1,11 @@
-import "./style.css";
+import { StyledResult, InputResult } from "./styled";
 
-const Result = ({ result }) => (
-    <p className="text text--result">
+export const Result = ({ result }) => (
+  <>
+   <StyledResult>
+        Po wymianie:
+   </StyledResult>
+   <InputResult>
         {result && (
             <>
                 {result.sourceAmount.toFixed(2)}&nbsp;{result.currency}&nbsp; = &nbsp;
@@ -10,7 +14,9 @@ const Result = ({ result }) => (
                 </stong>
             </>
         )}
-    </p>
+    </InputResult>
+    <StyledResult>
+          (na dzień: 2024-02-09)
+    </StyledResult>
+  </>
 );
-
-export default Result;
