@@ -12,7 +12,6 @@ export const Form = ({ calculateResult, title }) => {
   };
 
   return (
-    <>
       <form onSubmit={onFormSubmit}>
         <Fieldset>
           <Legend>{title}</Legend>
@@ -49,6 +48,5 @@ export const Form = ({ calculateResult, title }) => {
         </Fieldset>
         <FormButton>Przelicz!</FormButton>
       </form>
-    </>
   );
 };
