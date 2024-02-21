@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const StyledResult = styled.p`
+export const StyledResult = styled.div`
   margin: 0 auto;
   padding: 5px;
   width: 100%;
@@ -8,17 +8,10 @@ export const StyledResult = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.color.codGray};
   font-style: italic;
-`;
 
-export const InputResult = styled.p`
-  margin: 0 auto;
-  border: 1px solid ${({ theme }) => theme.color.gray};
-  border-radius: 10px;
-  padding: 5px;
-  width: 100%;
-  min-height: 30px; 
-  max-width: 400px;
-  text-align: center;
-  color: ${({ theme }) => theme.color.codGray};
-  font-style: italic;
+  ${({ primary }) => primary && css`
+    border: 1px solid ${({ theme }) => theme.color.gray};
+    border-radius: 10px;
+    min-height: 30px; 
+  `}
 `;
