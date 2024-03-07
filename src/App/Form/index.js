@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
+import { Result } from "./Result";
 import { LabelText, Fieldset, FormButton, Legend, Input, FormField } from "./styled";
 
 export const Form = ({ calculateResult, title }) => {
@@ -49,6 +50,8 @@ export const Form = ({ calculateResult, title }) => {
           <FormField>* pole wymagane</FormField>
         </Fieldset>
         <FormButton>Przelicz!</FormButton>
+        {/* <Result result= { result } /> */}
       </form>
+
   );
 };
