@@ -6,5 +6,6 @@ export const theme = {
         dimGray: "#666666",
         codGray: "#0f0f0f",
         lipstick: "#9b1003",
+        darkGreen: "#09451a",
     },
 };

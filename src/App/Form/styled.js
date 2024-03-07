@@ -70,3 +70,11 @@ export const Input = styled.input`
     color: ${({ theme }) => theme.color.dimGray};
     font-style: italic;
 `;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.darkGreen};
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.lipstick};
+`;
