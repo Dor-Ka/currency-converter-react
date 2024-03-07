@@ -22,7 +22,6 @@ export const Form = ({ calculateResult, title }) => {
                 as="select"
                 name="currency"
                 value={currency}
-                name="currancy"
                 onChange={({ target }) => setCurrency(target.value)}
               >
                 {currencies.map((currency) => (
@@ -44,7 +43,6 @@ export const Form = ({ calculateResult, title }) => {
                 step="0.01"
                 min="0.01"
                 required
-                name="currancy"
               />
             </LabelText>{" "}
           </p>
