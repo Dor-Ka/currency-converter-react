@@ -12,6 +12,6 @@ export const Result = ({ result }) => (
           </>
         )}
       </StyledResult>
-      (na dzień: 2024-02-09)
+      (Kurs NBP z dnia: 2024-02-09)
     </StyledResult>
 );
