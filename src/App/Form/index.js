@@ -17,11 +17,11 @@ export const Form = ({ title }) => {
   const ratesData = useRatesData();
 
   const calculateResult = (currency, amount) => {
-    const rate = ratesData[currency].value;
+    const rate = ratesData.rates[currency].value;
 
     setResult({
       sourceAmount: +amount,
-      targetAmount: rate.value * amount,
+      targetAmount: rate * amount,
       currency,
     });
   };

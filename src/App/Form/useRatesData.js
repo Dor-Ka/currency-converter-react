@@ -11,7 +11,7 @@ export const useRatesData = () => {
     const fatchRates = async () => {
       try {
         const response = await fetch(
-          // "https://api.currencyapi.com/v3/latest?apikey=cur_live_uhik6OejdNTjJIO3bxhlEUSeL4mc13bBb1UrUwK2&currencies=&base_currency=PLN&currencies[]=EUR&currencies[]=USD&currencies[]=GBP&currencies[]=CHF"
+          "https://api.currencyapi.com/v3/latest?apikey=cur_live_uhik6OejdNTjJIO3bxhlEUSeL4mc13bBb1UrUwK2&currencies=&base_currency=PLN&currencies[]=EUR&currencies[]=USD&currencies[]=GBP&currencies[]=CHF"
         );
         if (!response.ok) {
           throw new Error(response.statusText);
