@@ -1,6 +1,10 @@
 import { StyledResult } from "./styled";
+import { useInfoDate } from "./useApiDate";
 
-export const Result = ({ result }) => (
+export const Result = ({ result }, ratesData) => {
+  const formattedApiDate = useInfoDate(ratesData);
+
+  return (
     <StyledResult>
       Po wymianie:
       <StyledResult primary>
@@ -12,6 +16,7 @@ export const Result = ({ result }) => (
           </>
         )}
       </StyledResult>
-      (Kurs NBP z dnia: 2024-02-09)
+      (Kurs z dnia:<strong> {formattedApiDate}</strong>)
     </StyledResult>
-);
+  );
+};

@@ -21,7 +21,7 @@ export const Form = ({ title }) => {
 
     setResult({
       sourceAmount: +amount,
-      targetAmount: rate * amount,
+      targetAmount: amount / rate,
       currency,
     });
   };

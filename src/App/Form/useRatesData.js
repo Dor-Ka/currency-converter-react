@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 export const useRatesData = () => {
   const [ratesData, setRatesData] = useState({
     state: "loading",
-    // rates: "null",
-    // date: "null",
   });
 
   useEffect(() => {
@@ -24,7 +22,6 @@ export const useRatesData = () => {
           rates: data,
           date: meta.last_updated_at,
         });
-
       } catch {
         setRatesData({
           state: "error",
