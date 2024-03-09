@@ -4,19 +4,23 @@ Link to the page => [todolist-react](https://dorotakar.github.io/currency-conver
 
 This project is a simple website created for practicing basic **HTML**, **CSS**, **JavaScript**, and **react** skills.
 ## Technologies used:
-- BEM
 - ES6+ features
 - flex
 - immutability array in JavaScript
-- react
-- react useState
-- react useEffect
-- react custom hooks
+- react:
+    - useState
+    - useEffect
+    - custom hooks
 - clock: setInterval
 - styled-components
+- API:
+    - fetch
+    - async/await
+    - error handling
+
 ## demo:
-![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react1.png?)
-![demo2](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react2.gif?)
+![demo1](https://github.com/DorotaKar/currency-converter-react/blob/main/public/readme-react-api.png?)
+
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
