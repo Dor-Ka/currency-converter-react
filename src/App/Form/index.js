@@ -10,6 +10,7 @@ import {
   FormField,
   Loading,
   Failure,
+  Container,
 } from "./styled";
 
 export const Form = ({ title }) => {
@@ -39,15 +40,19 @@ export const Form = ({ title }) => {
       <Fieldset>
         <Legend>{title}</Legend>
         {ratesData.state === "loading" ? (
-          <Loading>ŁADOWANIE...</Loading>
+          <Container>
+            <Loading>ŁADOWANIE...</Loading>
+          </Container>
         ) : ratesData.state === "error" ? (
-          <Failure>
-            BŁĄD
-            <br />
-            sprawdź połączenie z internetem
-          </Failure>
+          <Container>
+            <Failure>
+              BŁĄD
+              <br />
+              sprawdź połączenie z internetem
+            </Failure>
+          </Container>
         ) : (
-          <>
+          <Container>
             <p>
               <LabelText>
                 Waluta:
@@ -80,11 +85,63 @@ export const Form = ({ title }) => {
               </LabelText>{" "}
             </p>
             <FormField>* pole wymagane</FormField>
-          </>
+            <FormButton>Przelicz!</FormButton>
+            <Result result={result} />
+          </Container>
         )}
       </Fieldset>
-      <FormButton>Przelicz!</FormButton>
-      <Result result={result} />
     </form>
+
+    // <form onSubmit={onFormSubmit}>
+    //   <Fieldset>
+    //     <Legend>{title}</Legend>
+    //     {ratesData.state === "loading" ? (
+    //       <Loading>ŁADOWANIE...</Loading>
+    //     ) : ratesData.state === "error" ? (
+    //       <Failure>
+    //         BŁĄD
+    //         <br />
+    //         sprawdź połączenie z internetem
+    //       </Failure>
+    //     ) : (
+    //       <>
+    //         <p>
+    //           <LabelText>
+    //             Waluta:
+    //             <Input
+    //               as="select"
+    //               name="currency"
+    //               value={currency}
+    //               onChange={({ target }) => setCurrency(target.value)}
+    //             >
+    //               {Object.keys(ratesData.rates).map((currency) => (
+    //                 <option key={currency} value={currency}>
+    //                   {currency}
+    //                 </option>
+    //               ))}
+    //             </Input>
+    //           </LabelText>
+    //         </p>
+    //         <p>
+    //           <LabelText>
+    //             *Kwota:
+    //             <Input
+    //               name="currency"
+    //               value={amount}
+    //               onChange={({ target }) => setAmount(target.value)}
+    //               type="number"
+    //               step="0.01"
+    //               min="0.01"
+    //               required
+    //             />
+    //           </LabelText>{" "}
+    //         </p>
+    //         <FormField>* pole wymagane</FormField>
+    //       </>
+    //     )}
+    //   </Fieldset>
+    //   <FormButton>Przelicz!</FormButton>
+    //   <Result result={result} />
+    // </form>
   );
 };

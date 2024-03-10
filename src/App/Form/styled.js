@@ -77,3 +77,7 @@ export const Loading = styled.p`
 export const Failure = styled.p`
   color: ${({ theme }) => theme.color.lipstick};
 `;
+
+export const Container = styled.div`
+  min-height: 300px;
+`;
