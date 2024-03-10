@@ -1,34 +1,14 @@
-// import { useState } from "react";
-import { Container } from "./Container";
 import { Form } from "./Form";
-// import { currencies } from "./currencies";
 import { Clock } from "./Clock";
+import { Main } from "./styled";
 
 function App() {
-  // const [result, setResult] = useState(null);
-
-  // const calculateResult = (currency, amount) => {
-  //   const rate = currencies
-  //     .find(({ name }) => name === currency)
-  //     .rate;
-
-  //   setResult({
-  //     sourceAmount: +amount,
-  //     targetAmount: rate * amount,
-  //     currency,
-  //   });
-  // };
-
   return (
-    <Container>
-      <Clock/>
-      <Form
-        title="Przelicz walutę na PLN:"
-        // calculateResult={calculateResult}
-      />
-    </Container>
+    <Main>
+      <Clock />
+      <Form title="Przelicz walutę na PLN:" />
+    </Main>
   );
-};
-
+}
 
 export default App;

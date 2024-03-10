@@ -22,4 +22,5 @@ export const GlobaleStyle = createGlobalStyle`
     background-position: center;
     background-size: cover;
   }
+  
 `;
