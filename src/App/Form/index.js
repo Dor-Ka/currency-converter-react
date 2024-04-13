@@ -91,3 +91,5 @@ export const Form = ({ title }) => {
         )}
       </Fieldset>
     </form>
+  );
+};
