@@ -1,6 +1,6 @@
 # CURRENCY-CONVERTER - react
 ## About:
-Link to the page => [currency-converter-react](https://dorotakar.github.io/currency-converter-react/)
+Link to the page => [currency-converter-react](https://dor-ka.github.io/currency-converter-react/)
 
 This project is a simple website created for practicing basic **HTML**, **CSS**, **JavaScript**, and **react** skills.
 ## Technologies used:
